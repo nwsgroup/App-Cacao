@@ -1,0 +1,64 @@
+/* Reset / Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    /* A soft gradient background */
+    background: linear-gradient(135deg, #6A82FB 0%, #FC5C7D 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Page Heading */
+  h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+  }
+  
+  /* Container for the Buttons */
+  .buttons-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Button Styling */
+  button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #333333;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Hover & Active Effects */
+  button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    background-color: #e3e3e3;
+    transform: translateY(1px);
+  }
+  
