@@ -20,8 +20,7 @@
 // Wait for the deviceready event before using any of Cordova's device APIs.
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
-//env.allowLocalModels = false;
-env.allowRemoteModels = false;
+env.allowRemoteModels = true;
 
 document.addEventListener("DOMContentLoaded", async () => {
     const imageContainer = document.querySelector(".custom-file-upload");
@@ -31,11 +30,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const uploadButton = document.getElementById("upload-btn");
     const container = document.querySelector(".custom-file-upload");
 
-    status.textContent = "Loading model...";
+    status.textContent = "Cargando modelo...";
 
     const classifier = await pipeline("image-classification", "CristianR8/test-detection");
 
-    status.textContent = "Ready";
+    status.textContent = "Listo";
 
     async function detect(img) {
         status.innerHTML = `
@@ -78,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             img.remove();
         }  
         fileUpload.value="";
-        status.textContent = "Ready";  
+        status.textContent = "Listo";  
         uploadButton.style.display='flex'; 
     });
 

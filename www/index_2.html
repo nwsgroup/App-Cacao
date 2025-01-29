@@ -35,24 +35,33 @@
       content="initial-scale=1, width=device-width, viewport-fit=cover"
     />
     <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
-    <title>Object Detection</title>
+    <title>Detección de granos</title>
   </head>
   <body>  
     <div class="container">
-      <h1>Object Detection</h1>
+      <div class="header-icon">
+        <img src="images/logo_IA4Cacao.png" alt="My Icon" />
+      </div>
+      <h1>Detección de granos</h1>
       <div class="custom-file-upload">
-        <button id="upload-btn">Click to upload an image</button>
+        <button id="upload-btn">Presione aquí para cargar una imagen</button>
       </div>
       <input type="file" id="upload" accept="image/*" />
-      <div id="status">Loading model...</div>
+      <div id="status">Cargando modelo...</div>
       <div class="buttons">
-        <button id="reset-image" class="reset">Reset</button>
-        <button class="back" onclick="window.location.href='main.html'">Go Back</button>
+        <button id="reset-image" class="reset">Limpiar</button>
+        <button class="reset" onclick="window.location.href='main.html'">Volver</button>
+
       </div>
     </div>
-    <!--<script src="cordova.js"></script>-->
+    <div class="company-icon">
+      <img src="images/logo_agrosavia.png" alt="My Icon" />
+    </div>
     <script type="module" src="js/index_2.js"></script>
   </body>
 </html>

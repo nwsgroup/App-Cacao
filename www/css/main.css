@@ -1,64 +1,98 @@
-/* Reset / Box Sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Funnel Display', sans-serif; 
+  background: linear-gradient(135deg, #83ccfc, #e8ffe8);
+  color: #333;
+  height: 100%; 
+}
+
+body {
+  text-align: center;            
+  display: flex;                  
+  flex-direction: column;        
+  align-items: center;            
+  justify-content: center;              
+  min-height: 100vh;             
+  padding: 20px;                 
+  box-sizing: border-box;        
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;                      
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0;                  
+  font-weight: normal;
+  color: #555;
   
-  /* Body Styling */
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    /* A soft gradient background */
-    background: linear-gradient(135deg, #6A82FB 0%, #FC5C7D 100%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* Page Heading */
-  h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    margin-bottom: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ia {
+  margin-bottom: 40px;
+}
+
+.research {
+  margin-top: 40px;
+}
+
+.header-icon,
+.company-icon {
+  margin: 10px 0;                 
+}
+
+.header-icon img,
+.company-icon img {
+  max-width: 180px;               
+  height: auto;
+  display: block;
+  margin: 0 auto;                 
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50;      
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  margin: 10px 0;                 
+  border: none;
+  border-radius: 30px;           
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.1s ease-in-out;
+  font-family: 'Funnel Display', sans-serif;
+}
+
+button:hover {
+  background-color: #43a047;
+  transform: scale(1.05);         
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.6rem;
   }
 
-  h2 {
-    color: #ffffff;
-    margin-bottom: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+  h3 {
+    font-size: 1rem;
+    margin: 10px 0;
   }
-  
-  /* Container for the Buttons */
-  .buttons-container {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  /* Button Styling */
+
   button {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    color: #333333;
-    background-color: #ffffff;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 80%;                  
+    max-width: 300px;
+    font-size: 0.95rem;
   }
-  
-  /* Hover & Active Effects */
-  button:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-3px);
+
+  .header-icon img,
+  .company-icon img {
+    max-width: 140px;            
   }
-  
-  button:active {
-    background-color: #e3e3e3;
-    transform: translateY(1px);
-  }
-  
+}
