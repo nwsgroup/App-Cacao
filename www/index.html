@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
     <title>Nivel de Fermentación</title>
+  
   </head>
   <body>
     <div class="container">
@@ -51,7 +52,7 @@
       <div class="custom-file-upload">
         <button id="upload-btn">Presione aquí para cargar una imagen</button>
       </div>
-      <input type="file" id="upload" accept="image/*" />
+      <input type="file" id="upload"  accept="image/*" capture/>
       <div id="status">Cargando modelo...</div>
       <div class="buttons">
         <button id="reset-image" class="reset">Limpiar</button>

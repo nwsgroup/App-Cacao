@@ -29,5 +29,27 @@
   <div class="company-icon">
     <img src="images/logo_agrosavia.png" alt="My Icon" />
   </div>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script>
+    document.addEventListener('deviceready', function () {
+
+var permissions = cordova.plugins.permissions;
+
+permissions.requestPermission(permissions.CAMERA, successCallback, errorCallback);
+
+function successCallback() {
+
+console.log('Camera permission granted');
+
+}
+
+function errorCallback() {
+
+console.log('Camera permission denied');
+
+}
+
+}, false);
+  </script>
 </body>
 </html>

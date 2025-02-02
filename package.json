@@ -14,13 +14,21 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^13.0.0",
-    "cordova-browser": "^7.0.0"
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-android-permissions": "^1.1.5",
+    "cordova-plugin-camera": "github:apache/cordova-plugin-camera",
+    "cordova-plugin-device": "^3.0.0"
   },
   "cordova": {
     "platforms": [
       "browser",
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-camera": {},
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-device": {}
+    }
   },
   "dependencies": {
     "@huggingface/transformers": "^3.3.2"
